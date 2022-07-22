@@ -40,8 +40,6 @@ const populateDBWithDummyData = (numberOfItems) => {
         // await init();
 
         const query = { age: { $gt: 22 } }
-        // const query = { favoriteFruit: 'potato' }
-
 
         const users = await User.find(query)
         console.log(`Found ${users.length} users ======= `);
